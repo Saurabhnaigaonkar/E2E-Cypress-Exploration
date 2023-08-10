@@ -22,7 +22,8 @@ Building An E2E Automation Framework using :
 -> GitHub Workflows: Actions
 
 # Framework Design
-![Framework Design](https://github.com/Saurabhnaigaonkar/E2E-Cypress-Exploration/assets/81736981/0cd18d17-4497-439f-b9b6-0ecbf9fa70f5)
+
+![Framework Design](https://github.com/Saurabhnaigaonkar/E2E-Cypress-Exploration/assets/81736981/1cee421b-d60a-402c-b4ca-c6ed11b0b93a)
 
 
 
