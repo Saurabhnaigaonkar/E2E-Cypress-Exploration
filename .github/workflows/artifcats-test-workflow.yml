@@ -1,20 +1,20 @@
 name: Generate artifacts for the tests
-on: push
+on: [push]
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
-    name: Test artifacts
+
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/upload-artifact@v3
       - uses: cypress-io/github-action@v5
-      if: failure()
-      with:
-        name: cypress-screenshots
-        path: ./cypress/screenshots
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: ./cypress/screenshots
 
-    - uses: actions/upload-artifact@v3
-      if: always()
-      with:
-        name: cypress-videos
-        path: ./cypress/videos
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: cypress-videos
+          path: ./cypress/videos
