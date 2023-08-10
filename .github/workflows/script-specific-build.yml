@@ -1,4 +1,4 @@
-name: Sanity Build
+name: Script specific build configuration
 on: push
 jobs:
   cypress-run:

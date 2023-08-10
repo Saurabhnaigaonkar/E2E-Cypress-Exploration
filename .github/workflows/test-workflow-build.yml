@@ -1,4 +1,4 @@
-name: Regression End-to-end tests
+name: test workflow - E2E tests
 on: push
 jobs:
   cypress-run:

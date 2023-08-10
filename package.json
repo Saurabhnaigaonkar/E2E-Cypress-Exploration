@@ -10,11 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/Saurabhnaigaonkar/E2E-Cypress-Exploration.git"
   },
   "author": "Saurabh Naigaonkar",
   "license": "ISC",
-  "homepage": "",
+  "bugs": {
+    "url": "https://github.com/Saurabhnaigaonkar/E2E-Cypress-Exploration/issues"
+  },
+  "homepage": "https://github.com/Saurabhnaigaonkar/E2E-Cypress-Exploration#readme",
   "devDependencies": {
     "cypress": "^12.17.1",
     "cypress-mochawesome-reporter": "^3.5.1"
