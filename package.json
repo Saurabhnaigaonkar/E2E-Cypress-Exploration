@@ -1,0 +1,22 @@
+{
+  "name": "cypress-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:addToCart": "npx cypress run --spec cypress/e2e/tests/addToCartTest.cy.js",
+    "test:registerFlow": "npx cypress run --spec cypress/e2e/tests/registerTest.cy.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Saurabh Naigaonkar",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "cypress": "^12.17.1",
+    "cypress-mochawesome-reporter": "^3.5.1"
+  }
+}
