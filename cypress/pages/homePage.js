@@ -1,22 +1,26 @@
-import weblocators from "./selectors"
+import UiActions from "./UiActions";
+import weblocators from "./selectors";
 
+export class HomePage {
 
-export class homePage {
-
+    //creating the instace of UiActions to making it accessible to all methods.
+    constructor() {
+        this.uiActions = UiActions;
+    }
+    performLogin(username, password) {
+        this.uiActions.login(username, password)
+    }
 
     searchProduct(productName) {
-
-        cy.get(weblocators.search_input).type(productName)
-        cy.get(weblocators.click_search).click()
-
+        this.uiActions.typeText(weblocators.search_input, productName);
+        this.uiActions.clickButton(weblocators.click_search);
     }
+
     addToCart() {
-
-        cy.contains(weblocators.addtocart).first().click()
+        this.uiActions.firstClick(weblocators.addtocart);
     }
 
-    verifySucessMessage() {
-        return cy.get(weblocators.successMessages)
+    verifySuccessMessage() {
+        return this.uiActions.get(weblocators.successMessages);
     }
-
 }

@@ -1,40 +1,25 @@
-import weblocators from "./selectors"
-
+import UiActions from "./UiActions";
+import weblocators from "./selectors";
 
 export class registerPage {
+  openURL() {
+    UiActions.visitUrl(Cypress.env('URL'));
+  }
 
-    openURL() {
+  fillPersonalInformation(firstName, lastName, email, phoneNo, password) {
+    UiActions.typeText(weblocators.firstName, firstName);
+    UiActions.typeText(weblocators.lastName, lastName);
+    UiActions.typeText(weblocators.email, email);
+    UiActions.typeText(weblocators.telephone, phoneNo);
+    UiActions.typeText(weblocators.password, password);
+    UiActions.typeText(weblocators.passwordConfirm, password);
+  }
 
-        cy.visit(Cypress.env('URL'))
-    }
-    enterFirstName(FName) {
+  selectPolicyCheckbox() {
+    UiActions.check(weblocators.policyCheckbox);
+  }
 
-        cy.get(weblocators.firstName).type(FName)
-    }
-    enterlastName(LName) {
-
-        cy.get(weblocators.lastName).type(LName)
-    }
-    enterEmail(email) {
-
-        cy.get(weblocators.email).type(email)
-    }
-    enterTelephone(phoneNo) {
-
-        cy.get(weblocators.telephone).type(phoneNo)
-    }
-    enterPassword(password) {
-
-        cy.get(weblocators.password).type(password)
-        cy.get(weblocators.passwordConfirm).type(password)
-
-    }
-    selectCheckbox() {
-
-        cy.get(weblocators.policyCheckbox).check()
-    }
-    clickOnContinue() {
-        cy.get(weblocators.continue).click()
-    }
-
+  clickContinue() {
+    UiActions.clickButton(weblocators.continue);
+  }
 }
