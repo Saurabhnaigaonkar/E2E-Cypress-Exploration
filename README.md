@@ -1,26 +1,26 @@
-# Cypress-E2E
-Cypress-E2E
+# E2E Cypress Exploration
 
 
-Automation Framework using below components:
+Building An E2E Automation Framework using :
 
-Page Object Model (Page Class + Test Files)
+    -> Page Object Model 
+        - Page Classes
+        - E2E Test Files
 
-Commands.js
+    -> Commands.js
 
-Fixtures
+    -> Fixtures
 
-Mochawesome HTMl Report
+    -> Reporting Plugin: Mochawesome Report (HTML Reporting)
 
-Customized Scripts in Package.json
+    -> Customized Scripts in Package.json
 
-Running using headless mode
+    -> Running using headless mode
 
-GitHub Actions
+    -> Parallel Execution of scripts
+
+    -> GitHub Workflows: Actions
 
 
-
-
-<img width="1394" alt="image" src="https://github.com/Anshita-Bhasin/Cypress-E2E/assets/10338077/7e322357-a5b8-4dd4-8082-8c6a989a419f">
 
 
